@@ -5,6 +5,8 @@
 #define g(x) (x*exp(x)+exp(x)+sin(x))
 void main()
 {
+
+    printf("Newton Rapson method to find approx root\n");
     float x0,e,x1;
     printf("\nenter inital guess x0=");
     scanf("%f",&x0);
@@ -23,6 +25,4 @@ void main()
     }while(fabs(f(x1)>e));
     printf("an approximate root x1=%f",x1);
     printf("f(x)=%f",f(x1));
-
-
 }
